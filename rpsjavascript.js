@@ -6,7 +6,16 @@ function getComputerChoice() {
 }
 
 function playerSelection() {
-    prompt('Choose Rock, Paper or Scissors.');
+    let playerEntry = prompt('Choose Rock, Paper or Scissors.').toLowerCase();
+    
+    if (playerEntry === 'rock' || playerEntry === 'paper' || playerEntry === 'scissors') {
+        let playerDecision = playerEntry;
+        return playerDecision;
+    }
+    else {
+        alert('Please choose Rock, Paper or Scissors.');
+        playerSelection();
+    }
 }
 
 
