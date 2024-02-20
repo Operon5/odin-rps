@@ -18,12 +18,14 @@ function playerDecision() {
     }
 }
 
-let computerSelection = getComputerChoice();
-let playerSelection = playerDecision();
+alert('First to five, wins.');
+
 let playerCounter = 0;
 let computerCounter = 0;
 
 function playRound() {
+    let computerSelection = getComputerChoice();
+    let playerSelection = playerDecision();
     if (playerSelection === computerSelection) {
         alert("It's a draw!");
     }
@@ -53,6 +55,22 @@ function playRound() {
     }
 }
 
-playRound();
+function playGame() {
+    playRound(); {
+        if (playerCounter >= 5 || computerCounter >=5) {
+            if (playerCounter >= 5) {
+                alert('You won the game!'); 
+            }
+            else if (computerCounter >=5) {
+                alert('You lost the game...');
+            }
+        }
+        else {
+        playGame();
+        }
+    }
+}
 
-console.log(computerSelection);
+playGame();
+
+console.log('The score was You: ' + playerCounter + ' ' + 'Computer: ' + computerCounter);
