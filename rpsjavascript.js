@@ -14,7 +14,6 @@ function playerDecision() {
     }
     else {
         alert('Please choose Rock, Paper or Scissors.');
-        playerDecision();
     }
 }
 
