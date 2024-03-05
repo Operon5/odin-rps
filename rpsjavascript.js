@@ -65,15 +65,15 @@ function playRound(playerSelection) {
         ++playerCounter;
         document.querySelector('#player-score').innerHTML = playerCounter;
     }
-    playGame();
+    results();
 };
 
-function playGame() {
+function results() {
         if (playerCounter >= 5) {
-                alert('You won the game!'); 
+            document.querySelector('#result').innerHTML = 'You won the game! Refresh to try again.'; 
             }
             else if (computerCounter >=5) {
-                alert('You lost the game...');
+            document.querySelector('#result').innerHTML = 'You lost the game... Refresh to try again.';
             }
 };
 
