@@ -65,6 +65,18 @@ function playRound(playerSelection) {
         ++playerCounter;
         document.querySelector('#player-score').innerHTML = playerCounter;
     }
+    playGame();
 };
+
+function playGame() {
+        if (playerCounter >= 5) {
+                alert('You won the game!'); 
+            }
+            else if (computerCounter >=5) {
+                alert('You lost the game...');
+            }
+};
+
+
 
 console.log('The score was You: ' + playerCounter + ' ' + 'Computer: ' + computerCounter);
