@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="rpsjavascript.js"></script>
+    <script defer type="text/javascript" src="rpsjavascript.js"></script>
     <title>Rock, Paper, Scissors!</title>
 </head>
 <body>
-    
+    <div class="intro">
+        <h1>It's time for a game of Rock, Paper, Scissors!</h1>
+        <p class="rules">First to five, wins.</pp>
+        <p class="pick">Choose your Weapon...</p>
+    </div>
+    <div class="buttons">
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+    </div>
+    <div class="scores">
+        <p>You: <span id="player-score">0</span></p><p>Computer: <span id="comp-score">0</span></p>
+    </div>
+    </body>
 </body>
 </html>
